@@ -9,7 +9,7 @@ public class FreelanceService {
                 count++; // увеличиваем счётчик месяцев отдыха
                 money = (money - expenses) / 3;
             } else {
-                money = income + money;
+                money = income + money - expenses;
             }
         }
         return count;
